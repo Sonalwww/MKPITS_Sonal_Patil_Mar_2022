@@ -2,10 +2,10 @@
 #include<conio.h>
 void main()
 {
-int r,perimeter;
-printf("enter r");
-scanf("%d",&r);
-perimeter=2*3.14*r;
-printf("the perimeter of circle is %d\n",perimeter);
+int side,perimeter;
+printf("enter the value of side");
+scanf("%d",&side);
+perimeter=4*side;
+printf("the perimrter of square %d",perimeter);
 getch();
 }
