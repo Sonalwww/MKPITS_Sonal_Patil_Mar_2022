@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <script>
+        function display(){
+             
+            var radius=parseInt(document.getElementById("r1").value)
+            var area= 3.14*radius*radius;
+            var circumference= 2*3.14*radius;
+            var a1=document.getElementById("area1");
+            a1.innerText=area;
+            var c2=document.getElementById("circum2");
+            c2.innerText=circumference;
+        }
+    </script>
+    </head>
+    <body>
+        <h1 align="center">Area of circle</h1>
+        <br><br>
+        <form>
+            enter radius:<input type="text" name="r1" id="r1" /><br><br>
+            <input type="button" value="call display function" onclick="display();"/><br><br>
+             area:<span id="area1"></span><br><br>
+            circumference:<span id="circum2"></span><br><br>
+             
+        </form>
+    </body>
+</html>
