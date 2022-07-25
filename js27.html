@@ -1,0 +1,39 @@
+<html>
+<head>
+<script>
+function msg() {
+
+var ch= document.getElementById("ch1").value;
+
+if(ch=="a" || ch=="i" || ch=="e" || ch=="o" || ch=="u")
+{
+    alert("This is a vowel");
+}
+else
+{
+alert("This is not a vowel");
+}
+}
+
+</script>
+</head>
+
+<body>
+
+
+<hr>
+<center>
+<form name="f1" style="width:50%" >
+<fieldset>
+<legend>vowel</legend>
+enter day character <input type=text name="ch" id="ch1"/>
+<br><br>
+
+<input type=button value="result" onclick="msg();" />
+<br><br>
+
+</fieldset>
+</form>
+</center>
+</body>
+</html>
