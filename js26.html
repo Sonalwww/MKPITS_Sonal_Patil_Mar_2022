@@ -1,0 +1,58 @@
+<html>
+<head>
+<script>
+function msg() {
+var dayno,result;
+dayno=parseInt(document.f1.n1.value);
+switch(dayno)
+{
+
+case 1 :
+result="monday";
+break;
+case 2 :
+result="tuesday";
+break;
+case 3 :
+result=" wednesday";
+break;
+case 4 :
+result="thursday";
+break;
+case 5 :
+result="friday";
+break;
+case 6 :
+result="saturday";
+break;
+case 7 :
+result="sunday";
+break;
+default:
+result="invalid day no";
+break;
+}
+document.getElementById("r1").innerHTML=result;
+}
+</script>
+</head>
+
+<body>
+<h1 align=center >mkpits solution</h1>
+
+<hr>
+<center>
+<form name="f1" style="width:50%" >
+<fieldset>
+<legend>calculation </legend>
+enter day no <input type=text name="n1" />
+<br><br>
+
+<input type=button value="result" onclick="msg();" />
+<br><br>
+result : <span id="r1" name="res" ></span>
+</fieldset>
+</form>
+</center>
+</body>
+</html>
