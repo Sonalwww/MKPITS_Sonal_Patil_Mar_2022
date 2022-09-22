@@ -1,0 +1,27 @@
+<script>
+    function msg(){
+    alert("hello! this is message");
+    }
+    </script>
+    <input type="button" onclick="msg()" value="call function"/>
+
+    <script>
+        function getcube(number){
+        alert(number*number*number);
+        }
+        </script>
+        <form>
+        <input type="button" value="click" onclick="getcube(8)"/>
+        </form>
+        <script>
+            function getcube(number){
+            
+            alert(number*number*number);
+            }
+            </script>
+            <form name="f1" >
+            enter number : <input type=text name="t1" /><br><br>
+            <input type="button" value="click" onclick="getcube(document.f1.t1.value)"/>
+            </form>
+
+           

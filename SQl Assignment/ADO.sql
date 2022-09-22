@@ -1,0 +1,6 @@
+
+
+create database JCOET
+CREATE TABLE USERS(USERNAME VARCHAR(70),PASSWORD VARCHAR(60))   
+
+select * from users

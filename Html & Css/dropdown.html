@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dropdown</title>
+    </head>
+    <style>
+        .drdw{
+            margin: 0px;
+        }
+        nav{
+            height: 40px;
+            background-color:goldenrod;
+            box-shadow: 5px 10px 14px rebeccapurple;
+        }
+        nav ul{
+            padding: 0px;
+            margin: 3px;
+            float:right;
+            margin-right: 120px;
+        }
+        nav ul li{
+            background: navy;
+            position: relative;
+            list-style: none;
+            display: inline-block;
+           
+        }
+
+        nav ul li a{
+            display: block;
+            padding: 0px 15px;
+            color:red;
+            text-decoration: none;
+            line-height: 50px;       
+             font-size: 20px;
+    }
+    nav ul li a:hover{
+        background: white;
+    }
+    nav ul ul{
+        position: absolute;
+        top: 40px;
+        display: none;
+
+    }
+    nav li:hover > ul{
+               display: block;
+    }
+    nav ul ul li{
+        width: 100px;
+        float: none;
+        display: list-item;
+        position: relative;
+    }
+    </style>
+    <body>
+        <div class="drdw">
+            <nav>
+            <ul>
+                <li><a href="#">Home</a>
+                <ul>
+                    <li><a href="#">sonal</a></li>
+                    <li><a href="#">monal</a></li>
+                    <li><a href="#">gonal</a></li>
+                </ul>
+                </li>
+                <li><a href="#">Contact us</a>
+                <ul>
+                    <li><a href="#">projot</a></li>
+                    <li><a href="#">kojol</a></li>
+                    <li><a href="#">mummy</a></li>
+                </li>
+                </ul>
+             </ul>
+            </nav>
+        </div>
+    </body>
+</html>

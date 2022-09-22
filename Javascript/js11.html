@@ -1,0 +1,39 @@
+<html>
+
+<head>
+<script>
+function msg() {
+var num1,result;
+num1=parseFloat(document.f1.n1.value);//parseInt function is used to convert string into integer
+if(num1 % 2 ==0)
+{
+document.getElementById("r1").innerHTML="num is even";
+}
+else
+{
+document.getElementById("r1").innerHTML="num is odd";
+}
+
+}
+</script>
+</head>
+
+<body>
+<h1 align=center >mkpits solution</h1>
+<hr>
+<center>
+<form name="f1" style="width:50%" >
+<fieldset>
+<legend>calculation </legend>
+enter number1 <input type=text name="n1" />
+<br><br>
+
+<input type=button value="result" onclick="msg();" />
+<br><br>
+result : <span id="r1" name="res" ></span>
+</fieldset>
+</form>
+
+</center>
+</body>
+</html>

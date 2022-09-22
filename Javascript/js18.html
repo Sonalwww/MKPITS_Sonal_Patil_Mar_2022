@@ -1,0 +1,42 @@
+<html>
+    <head>
+<script>
+function fact(){
+    var num,result=1;
+    var r=0;
+    var i=1;
+    num =parseInt(document.f1.n1.value);
+    while(i<=10)
+    {
+        result=num*i;
+        if(r==0)
+    {
+        r=num + " * " + i +"="+ result + "<br>"
+    } 
+    else{
+        r += num +"*"+i+"="+ result + "<br>"
+    }  
+    i++;
+    }
+    document.getElementById("r1").innerHTML=r;
+
+}
+</script>
+    </head>
+    <body>
+        <center>
+        <form name="f1">
+        <fieldset>
+            <legend>Factorial</legend>
+            enter number:<input type="text" name="n1"/>
+            <br><br>
+            <input type="button" value="result" onclick="fact();"/>
+            <br><br>
+            Result:
+            <br>
+            <span id="r1"></span>
+        </fieldset>
+        </form>
+    </center>
+    </body>
+</html>

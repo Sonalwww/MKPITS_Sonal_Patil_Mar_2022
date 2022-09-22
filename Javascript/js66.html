@@ -1,0 +1,25 @@
+<script>
+    function changestyle()
+    {
+    document.getElementById("p1").style.color="red";
+    document.getElementById("d1").style.backgroundColor="white";
+    document.getElementById("d1").style.width="50%";
+    document.getElementById("d1").style.height="50%";
+    }
+    function changeorgstyle()
+    {
+    
+    document.getElementById("d1").style.backgroundColor="pink";
+    document.getElementById("d1").style.width="20%";
+    
+    document.getElementById("d1").style.height="10%";
+    }
+    </script>
+    
+    <div onmouseover="changestyle()" onmouseout="changeorgstyle()" id="d1" style="background-color:rgb(29, 99, 165);color:black;border:5px solid rgb(119, 0, 255);padding:30px;">
+    
+    mkpits solutions
+    </div>
+    <p id="p1">welcome to mkpits solutions </p>
+    <br><br>
+    <input type=button value=ok onclick="changestyle()" />

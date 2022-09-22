@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <script>
+        function display(){
+        var length=parseInt(document.getElementById("l1").value)
+        var breadth=parseInt(document.getElementById("b1").value)
+        var height=parseInt(document.getElementById("h1").value)
+        var volume=length*breadth*height;
+        var v=document.getElementById("vol");
+        v.innerText=volume;
+         }
+         
+       </script>
+    </head>
+    <body>
+        <h1 align="center">Volume</h1>
+        <br><br>
+        <form>
+            enter length:<input type="text" name="l1" id="l1"/> <br><br>      
+            enter breadth:<input type="text" name="b1" id="b1"/><br><br> 
+            enter height:<input type="text" name="h1" id="h1"/><br><br> 
+            <input type="button" value="call display function" onclick="display();"/>
+            <br><br>
+            volume:<span id="vol"></span>
+        </form>
+    </body>
+</html>

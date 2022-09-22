@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include<conio.h>
+void main()
+{
+int j, num,total=0;
+printf("\nInput the first number: ");
+scanf("%d", &num);
+printf("\nInput the second number: ");
+scanf("%d", &num);
+printf("\nInput the third number: ");
+scanf("%d", &num);
+printf("\nInput the fourth number: ");
+scanf("%d", &num);
+printf("\nInput the fifth number: ");
+scanf("%d", &num);
+while(j>=5)
+{
+if((num%2) != 0)
+j++;
+{
+total += num;
+}
+}
+printf("Sum of all odd values %d", total);
+getch();
+}

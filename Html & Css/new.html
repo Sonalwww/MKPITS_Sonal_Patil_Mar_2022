@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dropdown menu</title>
+    </head>
+    <style>
+        body{
+             background: #dedede;
+            font-family: Arial, Helvetica, sans-serif;
+             margin: 0;
+              padding: 0;
+        }
+        .dropdown{
+            margin: 0;
+
+        }
+        .nav{
+            height: 60px;
+            background: #0069d1;
+            box-shadow: 0 10px 15px rgba(241, 2, 2, 0.1);
+
+        }
+        .logo{
+            padding: 2px 0 0 30px;
+            width: 100px;
+            height: 90px;
+            
+        }
+        nav ul{
+            padding: 0;
+            margin: 0;
+            float: right;
+            margin-right: 30px;
+        }
+        nav ul li{
+            background: rgb(72, 72, 221);
+            position: relative;
+            list-style: none;
+            display: inline-block;
+        }
+        nav ul li a{
+            display: block;
+            padding: 0 15px;
+            color: white;
+            text-decoration: none;
+            line-height: 60px;  
+            font-size: 20px;    
+      }
+      nav ul li a:hover {
+        background: #dedede;
+    }
+    nav ul ul{
+         position: absolute;
+         top: 60px;
+         display: none;
+    } 
+    nav ul li:hover > ul{
+        display: block;
+    }  
+    nav ul ul li{
+        width: 150px;
+        float: none;
+        display: list-item;
+        position: relative;
+    }
+    </style>
+    <body>
+     <div class="dropdown">
+        <nav>
+            <img class="logo"  src="flwer.jpg">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Tutorials</a>
+                <ul>
+                    <li><a href="#">Python</a></li>
+                    <li><a href="#">Javascript</a></li>
+                </ul>
+            </li>
+            <li><a  href="#">Web Devlopment</a>
+            <ul>
+                <li><a href="#">Front End</a></li>
+                <li><a href="#">Back End</a></li>
+                <li><a href="#">Others</a>
+                <ul>
+                         <li><a href="#">Links</a></li>
+                           <li><a href="#">Works</a></li>
+                          <li><a href="#">Status</a></li>
+                </ul>   
+            </ul>
+        </li>
+        <li><a href="#">Contact us</a></li>
+        <li><a href="#">Feedback</a></li>
+            </ul>
+        </nav>
+     </div>
+    </body>
+</html>

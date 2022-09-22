@@ -1,0 +1,23 @@
+<script>
+
+function sp()
+    {
+        
+            document.getElementById("s1").innerText=emp.id;
+            document.getElementById("s2").innerText=emp.name;
+             document.getElementById("s3").innerText=emp.salary;
+
+    }
+</script>
+<form>
+    
+        
+     enter  employee id:<input type=text id="s1" /> <br><br>
+    enter employee name:<input type=text id="s2" /> <br><br>
+    enter  employee salary:<input type=text id="s3" /> <br><br>
+    <input type="button" onclick="sp();" value="result"/>
+    
+    employee id : <span id="s1" ></span> <br>
+    employee name: <span id="s2" ></span> <br>
+    employee salary : <span id="s3" ></span> <br>
+</form>
